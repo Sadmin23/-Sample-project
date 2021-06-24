@@ -1,0 +1,9 @@
+#ifndef hello_inc2
+#define hello_inc2
+
+void sub(int b)
+{
+   a-=b;
+}
+
+#endif // HEADER_INCLUDED

@@ -1,0 +1,33 @@
+#ifndef hello_inc
+#define hello_inc
+
+#define L 50
+
+double arr[5];
+
+double factor;
+
+void resize(double factor);
+
+void enlarger()
+{
+	factor = 1.25;
+	resize(factor);
+}
+void reducer()
+{
+	factor = 0;
+	resize(factor);
+}
+void original()
+{
+	factor = 1;
+	resize(factor);
+}
+void resize(double factor)
+{
+    for (int i=0; i<5; i++)
+        arr[i]=L*(double)factor;
+}
+
+#endif // HEADER_INCLUDED
